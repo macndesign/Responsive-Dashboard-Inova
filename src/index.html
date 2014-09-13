@@ -14,6 +14,14 @@
     <link rel="stylesheet" type="text/css" href="bower_components/font-awesome/css/font-awesome.css">
     <!-- endbuild -->
 
+    <!-- build:css lib/angular-motion/css/angular-motion.css -->
+    <link rel="stylesheet" type="text/css" href="bower_components/angular-motion/dist/angular-motion.css">
+    <!-- endbuild -->
+
+    <!-- build:css lib/bootstrap-additions/css/bootstrap-additions.css -->
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap-additions/dist/bootstrap-additions.css">
+    <!-- endbuild -->
+
     <!-- build:less css/dashboard/dashboard.css -->
     <link rel="stylesheet" type="text/css" href="less/dashboard/variables.less">
     <link rel="stylesheet" type="text/css" href="less/dashboard/mixins.less">
@@ -32,6 +40,9 @@
     <!-- endbuild -->
     <!-- build:js lib/angular-cookies/angular-cookies.js -->
     <script type="text/javascript" src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <!-- endbuild -->
+    <!-- build:js lib/angular-animate/angular-animate.js -->
+    <script type="text/javascript" src="bower_components/angular-animate/angular-animate.js"></script>
     <!-- endbuild -->
     <!-- build:js lib/angular-bootstrap/ui-bootstrap.js -->
     <script type="text/javascript" src="bower_components/angular-bootstrap/ui-bootstrap.js"></script>
@@ -407,10 +418,10 @@
 
                     <form class="form-horizontal" role="form">
                         <div class="form-group has-feedback has-success">
-                            <label for="label" class="col-sm-2 control-label">Inline Form</label>
+                            <label for="input-mask" class="col-sm-2 control-label">Inline Form</label>
 
                             <div class="col-sm-5">
-                                <input type="text" class="form-control"/>
+                                <input id="input-mask" type="text" class="form-control"/>
                                 <span class="fa fa-key form-control-feedback"></span>
                             </div>
                             <div class="col-sm-5">
@@ -625,6 +636,15 @@
                     <tr>
                         <td colspan="5" class="text-center">
                             <div st-pagination="" st-items-by-page="8" st-displayed-pages="6"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <!-- Button to trigger a default aside with a scope as an object {title:'', content:'', etc.} -->
+                            <button type="button" class="btn btn-lg btn-primary" bs-aside="aside">Click to toggle aside
+                                <br>
+                                <small>(using an object)</small>
+                            </button>
                         </td>
                     </tr>
                 </tfoot>

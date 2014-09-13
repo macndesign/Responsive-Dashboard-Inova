@@ -1,5 +1,12 @@
 (function(){ 
-angular.module('Dashboard', ['ui.bootstrap', 'ui.router', 'ngCookies', 'smart-table', 'mgcrea.ngStrap']);
+angular.module('Dashboard', [
+    'ui.bootstrap',
+    'ui.router',
+    'ngCookies',
+    'smart-table',
+    'mgcrea.ngStrap.modal',
+    'mgcrea.ngStrap.aside'
+]);
 'use strict';
 
 /**
@@ -114,10 +121,16 @@ function BasicSmartTableCtrl($scope) {
             balance: balance
         };
     }
+
     $scope.rowCollection = [];
     for (var j = 0; j < 200; j++) {
         $scope.rowCollection.push(createRandomItem());
     }
+
+    $scope.aside = {
+      "title": "Title",
+      "content": "Hello Aside\nOi is a multiline message!"
+    };
 }
 /**
  * Loading Directive
