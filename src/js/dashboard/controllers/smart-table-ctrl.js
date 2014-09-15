@@ -27,8 +27,13 @@ function BasicSmartTableCtrl($scope) {
         $scope.rowCollection.push(createRandomItem());
     }
 
+    $scope.modal = {
+        "title": "Title",
+        "content": "Hello Modal!"
+    };
+
     $scope.aside = {
       "title": "Title",
-      "content": "Hello Aside\nOi is a multiline message!"
+      "content": "Hello Aside!"
     };
 }

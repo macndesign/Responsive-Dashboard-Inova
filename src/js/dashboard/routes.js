@@ -22,5 +22,9 @@ angular.module('Dashboard').config(['$stateProvider', '$urlRouterProvider',
         .state('smart-table', {
             url: '/smart-table',
             templateUrl: 'smart-table.html'
+        })
+        .state('ui-select', {
+            url: '/ui-select',
+            templateUrl: 'ui-select.html'
         });
 }]);

@@ -27,7 +27,11 @@
     "angular-smart-table": "~1.2.6",
     "angular-strap": "~2.1.0",
     "angular-motion": "~0.3.3",
-    "bootstrap-additions": "~0.2.3"
+    "bootstrap-additions": "~0.2.3",
+    "angular-ui-select": "~0.7.0",
+    "select2": "~3.4.5",
+    "selectize": "~0.8.5",
+    "angular-sanitize": "~1.2.24"
   },
   "repository": {
     "type": "git",
